@@ -5,7 +5,8 @@ sudo apt-get upgrade -y
 sudo adduser -system -home=/opt/odoo -group odoo
 sudo apt-get install postgresql -y
 sudo su - postgres -c "createuser -s odoo" 2> /dev/null || true
-sudo apt-get install git python3 python3-pip build-essential wget python3-dev python3-venv python3-wheel libxslt-dev libzip-dev libldap2-dev libsasl2-dev python3-setuptools node-less libjpeg-dev gdebi -y
+sudo apt-get install git python3 python3-pip build-essential 
+wget python3-dev python3-venv python3-wheel libxslt-dev libzip-dev libldap2-dev libsasl2-dev python3-setuptools node-less libjpeg-dev gdebi -y
 sudo apt-get install libpq-dev python-dev libxml2-dev libxslt1-dev libldap2-dev libsasl2-dev libffi-dev 
 sudo apt-get install nodejs npm -y
 sudo npm install -g rtlcss
